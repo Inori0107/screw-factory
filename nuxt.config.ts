@@ -17,5 +17,14 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 	modules: ["@nuxt/fonts", "@nuxt/icon", "@nuxt/ui", "@nuxt/content", "@nuxt/eslint", "@nuxt/image"],
 	// 啟用 SSR 以提高 SEO 效果
-	ssr: true
+	ssr: true,
+
+	// 配置生成靜態網站
+	nitro: {
+		preset: "netlify",
+		output: {
+			dir: "dist",
+			publicDir: "dist"
+		}
+	}
 });
