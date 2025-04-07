@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: xinfen-screw-factory
+    env: node
+    buildCommand: npm ci && npm run build
+    startCommand: node .output/server/index.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true

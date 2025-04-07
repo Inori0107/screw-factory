@@ -1,0 +1,196 @@
+/* 全域樣式 */
+:root {
+	/* 主要色彩 */
+	--primary-color: #0066cc;
+	--primary-dark: #004d99;
+	--primary-light: #3399ff;
+
+	/* 輔助色彩 */
+	--secondary-color: #333;
+	--accent-color: #ff6600;
+
+	/* 中性色彩 */
+	--light-gray: #f8f8f8;
+	--medium-gray: #ddd;
+	--dark-gray: #666;
+
+	/* 間距 */
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 3rem;
+
+	/* 陰影 */
+	--box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	--box-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: var(--secondary-color);
+	line-height: 1.6;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: var(--spacing-sm);
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: var(--primary-color);
+}
+
+h2 {
+	font-size: 1.8rem;
+	margin-bottom: var(--spacing-sm);
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+p {
+	margin-bottom: var(--spacing-sm);
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+a:hover {
+	color: var(--primary-dark);
+	text-decoration: underline;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--spacing-sm);
+}
+
+/* 按鈕樣式 */
+.btn {
+	display: inline-block;
+	padding: 0.5rem 1.5rem;
+	background-color: var(--primary-color);
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	font-weight: 500;
+}
+
+.btn:hover {
+	background-color: var(--primary-dark);
+	text-decoration: none;
+	transform: translateY(-2px);
+	box-shadow: var(--box-shadow);
+}
+
+.btn-secondary {
+	background-color: var(--dark-gray);
+}
+
+.btn-secondary:hover {
+	background-color: var(--secondary-color);
+}
+
+.btn-accent {
+	background-color: var(--accent-color);
+}
+
+.btn-accent:hover {
+	background-color: #e55a00;
+}
+
+/* 卡片元素 */
+.card {
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: var(--box-shadow);
+	padding: var(--spacing-md);
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	box-shadow: var(--box-shadow-hover);
+}
+
+/* 表單元素 */
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 0.7rem;
+	border: 1px solid var(--medium-gray);
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 1rem;
+	transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	border-color: var(--primary-color);
+	outline: none;
+}
+
+label {
+	display: block;
+	margin-bottom: var(--spacing-xs);
+	font-weight: 500;
+}
+
+/* 動畫效果 */
+.fade-in {
+	animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 2.2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		padding: 0 var(--spacing-sm);
+	}
+}
