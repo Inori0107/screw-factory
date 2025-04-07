@@ -46,33 +46,6 @@ npm run preview
 
 ## 部署指南
 
-### Render 部署步驟
-
-1. 在 [Render](https://render.com/) 建立帳號並登入
-2. 點擊 "New +" 按鈕，選擇 "Web Service"
-3. 連接您的 GitHub/GitLab 儲存庫或選擇 "Public Git repository" 並輸入您的 Git 儲存庫 URL
-4. 填寫以下配置：
-   - **Name**: 自訂您的服務名稱（例如：xinfen-screw-factory）
-   - **Environment**: Node
-   - **Region**: 選擇距離您的目標用戶最近的區域
-   - **Branch**: main（或您的主要分支）
-   - **Build Command**: `npm ci && npm run build`
-   - **Start Command**: `node .output/server/index.mjs`
-5. 在 "Advanced" 設定中，添加以下環境變數：
-   - `NODE_VERSION`: 20
-   - `NODE_ENV`: production
-6. 點擊 "Create Web Service" 開始部署
-7. 部署完成後，Render 會提供一個網址供您訪問
-
-### 使用 render.yaml 配置文件部署
-
-本專案包含 `render.yaml` 配置文件，可直接透過 Render 的 Blueprint 功能部署：
-
-1. 在 Render 儀表板，點擊 "New +" 按鈕，選擇 "Blueprint"
-2. 連接您的 Git 儲存庫
-3. Render 會自動讀取 `render.yaml` 配置並設置服務
-4. 檢查配置無誤後點擊 "Apply" 開始部署
-
 ### Netlify 部署步驟
 
 1. 在 [Netlify](https://www.netlify.com/) 建立帳號並登入
@@ -82,21 +55,33 @@ npm run preview
 5. 配置項目將自動從 `netlify.toml` 文件中讀取，但您可以進行以下檢查：
    - **Build command**: `npm run build`
    - **Publish directory**: `.output/public`
+   - **Node version**: 20（可在環境變數中設定）
 6. 點擊 "Deploy site" 按鈕開始部署
 7. 部署完成後，您可以在 Netlify 儀表板中找到您的網站 URL
 
-### Vercel 部署步驟
+### 設定自定義域名
 
-1. 在 [Vercel](https://vercel.com/) 建立帳號並登入
-2. 點擊 "New Project" 按鈕
-3. 導入您的 Git 儲存庫
-4. 配置項目將自動從 `vercel.json` 文件中讀取，但您可以檢查並調整以下設置：
-   - **Framework Preset**: Nuxt.js
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `.output/public`
-   - **Development Command**: `npm run dev`
-5. 點擊 "Deploy" 按鈕開始部署
-6. 部署完成後，Vercel 會提供一個網址供您訪問
+1. 在 Netlify 儀表板中，選擇您部署的網站
+2. 點擊 "Domain settings" 或 "Domain management"
+3. 點擊 "Add custom domain" 按鈕
+4. 輸入您想使用的域名（例如：www.xinfenscrew.com）
+5. 根據 Netlify 提供的指示，在您的域名註冊商設定 DNS 記錄
+6. 等待 DNS 變更生效（通常需要 24-48 小時）
+
+### 添加環境變數
+
+1. 在 Netlify 儀表板中，前往 "Site settings" > "Build & deploy" > "Environment"
+2. 點擊 "Edit variables" 按鈕
+3. 添加所需的環境變數（參考 `.env.example` 文件）
+4. 點擊 "Save" 保存變更
+5. 重新部署網站以應用新的環境變數
+
+### 啟用 HTTPS
+
+Netlify 默認為所有網站提供免費的 SSL/TLS 憑證，確保您的網站使用 HTTPS 協議。如果需要自定義 SSL 設定：
+
+1. 前往 "Site settings" > "Domain management" > "HTTPS"
+2. 您可以選擇使用 Netlify 的自動 SSL 或上傳自己的自定義憑證
 
 ## 維護與更新
 
@@ -104,6 +89,19 @@ npm run preview
 - 更新樣式：修改 assets/css/main.css
 - 更新圖片：替換 public/images 目錄下的文件
 - 環境變數：參考 .env.example 文件，創建並配置 .env 文件
+
+### 持續部署
+
+Netlify 支持持續部署，當您推送新的更改到 Git 儲存庫時，它會自動重新構建和部署您的網站。
+
+1. 進行更改並測試本地開發環境
+2. 將更改提交到 Git 儲存庫：
+   ```bash
+   git add .
+   git commit -m "描述您的更改"
+   git push
+   ```
+3. Netlify 會自動檢測推送並開始新的部署
 
 ## 授權
 
