@@ -53,16 +53,11 @@ npm run preview
 3. 選擇您的 Git 提供者（GitHub, GitLab, Bitbucket）並授權 Netlify 訪問
 4. 選擇您的網站儲存庫
 5. 配置項目將自動從 `netlify.toml` 文件中讀取，但您可以進行以下檢查：
-   - **Build command**: `npm run build`（已更新為自動複製文件到 dist 目錄）
-   - **Publish directory**: `dist`
+   - **Build command**: `npm run build`
+   - **Publish directory**: `.output/public`
    - **Node version**: 20（可在環境變數中設定）
 6. 點擊 "Deploy site" 按鈕開始部署
 7. 部署完成後，您可以在 Netlify 儀表板中找到您的網站 URL
-
-> **注意**：如果遇到部署問題，請確保以下設定已正確配置：
->
-> - 環境變數 `NETLIFY_NEXT_PLUGIN_SKIP` 已設置為 `true`
-> - 發布目錄已設置為 `dist`
 
 ### 設定自定義域名
 
