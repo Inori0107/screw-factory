@@ -5,7 +5,7 @@
 				<div class="logo">
 					<nuxt-link to="/">
 						<h1>鑫鋒螺絲</h1>
-						<!-- 此處可放置公司徽標 <img src="/images/logo.png" alt="鑫鋒螺絲" /> -->
+						<img src="/images/logo.png" alt="鑫鋒螺絲" />
 					</nuxt-link>
 				</div>
 				<div class="mobile-menu-toggle" @click="toggleMobileMenu">

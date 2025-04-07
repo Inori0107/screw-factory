@@ -38,7 +38,7 @@
 					<div class="overview-image">
 						<div class="image-placeholder">
 							<!-- 工廠照片或生產線照片 -->
-							<!-- <img src="/images/factory.jpg" alt="鑫鋒螺絲工廠" /> -->
+							<img src="/images/factory.jpg" alt="鑫鋒螺絲工廠" />
 						</div>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 				<div class="products-grid">
 					<div class="product-card card">
 						<div class="product-image">
-							<!-- <img src="/images/products/hex-bolt.jpg" alt="六角頭螺絲" /> -->
+							<img src="/images/products/hex-bolt.jpg" alt="六角頭螺絲" />
 							<div class="image-placeholder" />
 						</div>
 						<div class="product-info">
@@ -91,7 +91,7 @@
 					</div>
 					<div class="product-card card">
 						<div class="product-image">
-							<!-- <img src="/images/products/self-tapping.jpg" alt="自攻螺絲" /> -->
+							<img src="/images/products/self-tapping.jpg" alt="自攻螺絲" />
 							<div class="image-placeholder" />
 						</div>
 						<div class="product-info">
@@ -102,7 +102,7 @@
 					</div>
 					<div class="product-card card">
 						<div class="product-image">
-							<!-- <img src="/images/products/special-alloy.jpg" alt="特殊合金螺絲" /> -->
+							<img src="/images/products/special-alloy.jpg" alt="特殊合金螺絲" />
 							<div class="image-placeholder" />
 						</div>
 						<div class="product-info">
@@ -128,7 +128,7 @@
 						</div>
 						<div class="testimonial-author">
 							<div class="author-image">
-								<!-- <img src="/images/testimonials/client1.jpg" alt="張先生" /> -->
+								<img src="/images/testimonials/client1.jpg" alt="張先生" />
 							</div>
 							<div class="author-info">
 								<h4>張先生</h4>
@@ -142,7 +142,7 @@
 						</div>
 						<div class="testimonial-author">
 							<div class="author-image">
-								<!-- <img src="/images/testimonials/client2.jpg" alt="李小姐" /> -->
+								<img src="/images/testimonials/client2.jpg" alt="李小姐" />
 							</div>
 							<div class="author-info">
 								<h4>李小姐</h4>

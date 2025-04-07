@@ -18,7 +18,7 @@
 						<p>我們的創辦人陳先生有著35年的螺絲製造經驗，他堅持以品質和創新為核心價值，帶領鑫鋒螺絲在全球市場建立了良好的聲譽。</p>
 					</div>
 					<div class="content-image">
-						<!-- <img src="/images/about/factory-history.jpg" alt="鑫鋒螺絲工廠歷史" /> -->
+						<img src="/images/about/factory-history.jpg" alt="鑫鋒螺絲工廠歷史" />
 						<div class="image-placeholder" />
 					</div>
 				</div>
@@ -103,22 +103,22 @@
 				<h2>認證與榮譽</h2>
 				<div class="certification-list">
 					<div class="certification-item">
-						<!-- <img src="/images/about/iso9001.png" alt="ISO 9001" /> -->
+						<img src="/images/about/iso9001.png" alt="ISO 9001" />
 						<div class="cert-placeholder">ISO 9001</div>
 						<p>品質管理認證</p>
 					</div>
 					<div class="certification-item">
-						<!-- <img src="/images/about/iso14001.png" alt="ISO 14001" /> -->
+						<img src="/images/about/iso14001.png" alt="ISO 14001" />
 						<div class="cert-placeholder">ISO 14001</div>
 						<p>環境管理認證</p>
 					</div>
 					<div class="certification-item">
-						<!-- <img src="/images/about/ce.png" alt="CE Marking" /> -->
+						<img src="/images/about/ce.png" alt="CE Marking" />
 						<div class="cert-placeholder">CE 標誌</div>
 						<p>歐盟安全認證</p>
 					</div>
 					<div class="certification-item">
-						<!-- <img src="/images/about/award.png" alt="行業最佳供應商" /> -->
+						<img src="/images/about/award.png" alt="行業最佳供應商" />
 						<div class="cert-placeholder">最佳供應商</div>
 						<p>2019年度獎項</p>
 					</div>
@@ -129,19 +129,19 @@
 				<h2>我們的設施</h2>
 				<div class="facilities-gallery">
 					<div class="facility-image">
-						<!-- <img src="/images/about/facility1.jpg" alt="現代化生產線" /> -->
+						<img src="/images/about/facility1.jpg" alt="現代化生產線" />
 						<div class="image-placeholder">
 							<p>現代化生產線</p>
 						</div>
 					</div>
 					<div class="facility-image">
-						<!-- <img src="/images/about/facility2.jpg" alt="品質檢測實驗室" /> -->
+						<img src="/images/about/facility2.jpg" alt="品質檢測實驗室" />
 						<div class="image-placeholder">
 							<p>品質檢測實驗室</p>
 						</div>
 					</div>
 					<div class="facility-image">
-						<!-- <img src="/images/about/facility3.jpg" alt="自動化包裝系統" /> -->
+						<img src="/images/about/facility3.jpg" alt="自動化包裝系統" />
 						<div class="image-placeholder">
 							<p>自動化包裝系統</p>
 						</div>
@@ -153,21 +153,21 @@
 				<h2>管理團隊</h2>
 				<div class="team-members">
 					<div class="team-member card">
-						<!-- <img src="/images/about/ceo.jpg" alt="陳志明 - 創辦人兼總經理" /> -->
+						<img src="/images/about/ceo.jpg" alt="陳志明 - 創辦人兼總經理" />
 						<div class="member-image-placeholder" />
 						<h3>陳志明</h3>
 						<p class="member-position">創辦人兼總經理</p>
 						<p>擁有35年螺絲製造經驗，領導公司成為行業領導者</p>
 					</div>
 					<div class="team-member card">
-						<!-- <img src="/images/about/cto.jpg" alt="王大明 - 技術總監" /> -->
+						<img src="/images/about/cto.jpg" alt="王大明 - 技術總監" />
 						<div class="member-image-placeholder" />
 						<h3>王大明</h3>
 						<p class="member-position">技術總監</p>
 						<p>機械工程專家，負責產品開發和技術創新</p>
 					</div>
 					<div class="team-member card">
-						<!-- <img src="/images/about/production.jpg" alt="林小華 - 生產經理" /> -->
+						<img src="/images/about/production.jpg" alt="林小華 - 生產經理" />
 						<div class="member-image-placeholder" />
 						<h3>林小華</h3>
 						<p class="member-position">生產經理</p>
